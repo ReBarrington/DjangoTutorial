@@ -1,6 +1,6 @@
-## Learning Django
+# Learning Django
 
-### Initializing:
+## Initializing:
 - `django-admin startproject project_name`
 - Files generated:
     - `manage.py` : allows for command line commands
@@ -12,7 +12,7 @@
 
 - `python3 manage.py runserver` localhost:8000
 
-### Getting Started:
+## Getting Started:
 - a single project contains multiple apps (ex: blog, store, etc).
 - `python3 manage.py startapp app_name`
 - Files generated:
