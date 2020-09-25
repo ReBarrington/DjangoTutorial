@@ -12,7 +12,7 @@
 
 - `python3 manage.py runserver` localhost:8000
 
-## Getting Started:
+### Getting Started:
 - a single project contains multiple apps (ex: blog, store, etc).
 - `python3 manage.py startapp app_name`
 - Files generated:
