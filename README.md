@@ -1,5 +1,5 @@
-### Learning Django
+## Learning Django
 
-## Getting started:
+### Getting started:
 - `django-admin startproject project_name`
 
