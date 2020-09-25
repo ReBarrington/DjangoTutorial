@@ -25,3 +25,4 @@
     - `views.py`
         - `from django.http import HttpResponse`
 - create new `url.py` file in new app's directory
+    - `urlpatterns` hold path names. `/admin` routes to `admin.site.urls` as default. `/blog` utilizes `include` function to search for matching path name in `blog.urls` 's `urlpatterns`.
