@@ -8,5 +8,7 @@
         - `__init__.py` : informs python that this is a package
         - `settings.py` : configurations
         - `urls.py` : set up mapping/routing
-        - `wsgi.py` : communications with web server
+        - `wsgi.py` : communications with web server (/admin already set up)
+
+- `python manage.py runserver` localhost:8000
 
