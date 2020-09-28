@@ -24,5 +24,31 @@
     - `tests.py`
     - `views.py`
         - `from django.http import HttpResponse`
+- Remember to put secret in a git-ignored .env file
 - create new `url.py` file in new app's directory
     - `urlpatterns` hold path names. `/admin` routes to `admin.site.urls` as default. `/blog` utilizes `include` function to search for matching path name in `blog.urls` 's `urlpatterns`.
+
+## Templates:
+- Templates allow you to return more complex HTML than what is initialized in our `views.py` file.
+- Create a subdirectory to organize templates (Django convention).
+- example: blog -> templates -> blog -> template.html
+- `apps.py` contains a `BlogConfig` class that needs to be added in the `INSTALLED_APPS` list in `settings.py` as `'blog.apps.BlogConfig'`.
+- Change `views.py` to load template(s) by using the Django Shortcuts module.
+- Template Inheritance:
+    - `base.html` makes code DRY
+    - `home.html` and `about.html` both use `base.html` because they only differ in a small way. 
+
+## Styling:
+- used bootstrap starter template code in `base.html`
+- CSS belongs in `static directory`
+- blog -> static -> blog -> `main.css`
+- load static files
+    - first line in `base.html`
+    - ` <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}" `
+- `base.html` imports `main.css`
+
+## Navigation Bar:
+- In `base.html`, there is a navigation bar with links to Home, About, Login, and Register.
+- Currently hard-coded, we can change to be more dynamic.
+- ` <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a> `
+- `blog-home` references `urlpatterns` in `urls.py`
