@@ -46,3 +46,9 @@
     - first line in `base.html`
     - ` <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}" `
 - `base.html` imports `main.css`
+
+## Navigation Bar:
+- In `base.html`, there is a navigation bar with links to Home, About, Login, and Register.
+- Currently hard-coded, we can change to be more dynamic.
+- ` <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a> `
+- `blog-home` references `urlpatterns` in `urls.py`
