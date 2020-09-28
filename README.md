@@ -34,3 +34,6 @@
 - example: blog -> templates -> blog -> template.html
 - `apps.py` contains a `BlogConfig` class that needs to be added in the `INSTALLED_APPS` list in `settings.py` as `'blog.apps.BlogConfig'`.
 - Change `views.py` to load template(s) by using the Django Shortcuts module.
+- Template Inheritance:
+    - `base.html` makes code DRY
+    - 
