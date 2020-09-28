@@ -36,4 +36,13 @@
 - Change `views.py` to load template(s) by using the Django Shortcuts module.
 - Template Inheritance:
     - `base.html` makes code DRY
-    - 
+    - `home.html` and `about.html` both use `base.html` because they only differ in a small way. 
+
+## Styling:
+- used bootstrap starter template code in `base.html`
+- CSS belongs in `static directory`
+- blog -> static -> blog -> `main.css`
+- load static files
+    - first line in `base.html`
+    - ` <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}" `
+- `base.html` imports `main.css`
