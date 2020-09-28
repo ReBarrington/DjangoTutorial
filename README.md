@@ -32,5 +32,5 @@
 - Templates allow you to return more complex HTML than what is initialized in our `views.py` file.
 - Create a subdirectory to organize templates (Django convention).
 - example: blog -> templates -> blog -> template.html
-- `apps.py` contains a `BlogConfig` class that needs to be added in the `INSTALLED_APPS` list in `settings.py` as `'blog.apps.BlogConfig`.
+- `apps.py` contains a `BlogConfig` class that needs to be added in the `INSTALLED_APPS` list in `settings.py` as `'blog.apps.BlogConfig'`.
 - Change `views.py` to load template(s) by using the Django Shortcuts module.
