@@ -77,4 +77,4 @@
         ### Creating a new Post for a User:
         - `post_1 = Post(title='Blog 1', content='First Post Content!', author=user)`
          - `post_1.save()`
-        - `Post.objects.all()` returns empty array.
+        - `Post.objects.all()`
