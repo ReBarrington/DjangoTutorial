@@ -55,5 +55,7 @@
 
 ## Admin Page:
 - create database, auth_user
-    - 
-- `python manage.py createsuperuser`
+    - `python3 manage.py migrate`: runs migrations, makes auth_user table
+    - `python3 manage.py createsuperuser`: create superuser username/email/password
+    - `python3 manage.py makemigrations`: checks for changes
+    - Run server again to reload admin page. Log in with superuser.
