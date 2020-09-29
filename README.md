@@ -52,3 +52,8 @@
 - Currently hard-coded, we can change to be more dynamic.
 - ` <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a> `
 - `blog-home` references `urlpatterns` in `urls.py`
+
+## Admin Page:
+- create database, auth_user
+    - 
+- `python manage.py createsuperuser`
