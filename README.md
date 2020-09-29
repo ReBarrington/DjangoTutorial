@@ -57,6 +57,24 @@
 - create database, auth_user and create superuser
     - `python3 manage.py migrate`: runs migrations, makes auth_user table
     - `python3 manage.py createsuperuser`: create superuser username/email/password
-    - `python3 manage.py makemigrations`: checks for changes
     - Run server again to reload admin page. Log in with superuser.
-        - ability to create new users, permissions, 
+        - ability to create new users/permissions. 
+
+## Databases and Migration
+- Django already created a `models.py` file in each app directory. 
+- Create database as class, specify fields.
+- `python3 manage.py makemigrations`: checks for changes
+- creates migration file in migrations folder
+- `python3 manage.py sqlmigrate blog 0001`: generates SQL code for database
+- `python3 manage.py migrate` run migration
+- `python3 manage.py shell`: interactive console
+    - test: `from blog.models import Post`
+    - `from django.contrib.auth.models import User`
+    - `User.objects.all`
+    - returns a QuerySet
+    - `User.objects.filter(username='ReaganBarrington')`
+        - `user = User.objects.filter(username='ReaganBarrington').first()`: captures in variable.
+        ### Creating a new Post for a User:
+        - `post_1 = Post(title='Blog 1', content='First Post Content!', author=user)`
+         - `post_1.save()`
+        - `Post.objects.all()` returns empty array.
