@@ -29,6 +29,7 @@
     - `urlpatterns` hold path names. `/admin` routes to `admin.site.urls` as default. `/blog` utilizes `include` function to search for matching path name in `blog.urls` 's `urlpatterns`.
 
 ## Templates:
+[View CoreyMs Tutorial](https://www.youtube.com/watch?v=qDwdMDQ8oX4)
 - Templates allow you to return more complex HTML than what is initialized in our `views.py` file.
 - Create a subdirectory to organize templates (Django convention).
 - example: blog -> templates -> blog -> template.html
@@ -54,6 +55,7 @@
 - `blog-home` references `urlpatterns` in `urls.py`
 
 ## Django Administration:
+[View CoreyMS Tutorial](https://www.youtube.com/watch?v=1PkNiYlkkjo)
 - create database, auth_user and create superuser
     - `python3 manage.py migrate`: runs migrations, makes auth_user table
     - `python3 manage.py createsuperuser`: create superuser username/email/password
@@ -61,6 +63,7 @@
         - ability to create new users/permissions. 
 
 ## Databases and Migration
+[View CoreyMS Tutorial](https://www.youtube.com/watch?v=aHC3uTkT9r8)
 - Django already created a `models.py` file in each app directory. 
 - Create database as class, specify fields.
 - `python3 manage.py makemigrations`: checks for changes
@@ -91,3 +94,6 @@
             - import model: `from .models import Post`
             - `admin.site.register(Post)` 
         - Now within admin page, you can update/delete
+
+## User Registration
+[View CoreyMS Tutorial](https://www.youtube.com/watch?v=q4jPR-M0TAQ)
