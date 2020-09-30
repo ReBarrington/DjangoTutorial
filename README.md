@@ -85,3 +85,10 @@
         - `user.post_set.all()`: get QuerySet for posts by user
         - `user.post_set.create(title='Blog 3', content='Third Post Content!')`: create new post and authomatically save to database
         - `Post.objects.all()`
+    
+    ### Viewing the new Post DB in Admin Page:
+        - `admin.py` in blog directory
+        - Register model:
+            - import model: `from .models import Post`
+            - `admin.site.register(Post)` 
+        - Now within admin page, you can update/delete
