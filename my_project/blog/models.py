@@ -10,5 +10,7 @@ class Post(models.Model):
     date_posted = models.DateTimeField(default=timezone.now)
     # cascade deletes all user's posts when author is deleted, but doesnt delete author when post is deleted.
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    
+
+    def __str__(self):
+        return self.title
 
