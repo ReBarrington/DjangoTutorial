@@ -11,6 +11,6 @@ class Post(models.Model):
     # cascade deletes all user's posts when author is deleted, but doesnt delete author when post is deleted.
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    def __st__(self):
+    def __str__(self):
         return self.title
 

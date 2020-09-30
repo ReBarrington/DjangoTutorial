@@ -70,10 +70,11 @@
 - `python3 manage.py shell`: interactive console
     - test: `from blog.models import Post`
     - `from django.contrib.auth.models import User`
-    - `User.objects.all`
+    - `User.objects.all()`
     - returns a QuerySet
     - `User.objects.filter(username='ReaganBarrington')`
         - `user = User.objects.filter(username='ReaganBarrington').first()`: captures in variable.
+        - `user.id` or `user.pk` returns id/primary key
         ### Creating a new Post for a User:
         - `post_1 = Post(title='Blog 1', content='First Post Content!', author=user)`
          - `post_1.save()`
