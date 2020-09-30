@@ -82,6 +82,6 @@
         - `exit()`
         ### Get all Posts that User Created:
         - `User.post_set` now can run queries
-        - `user.post_set.all()`: get QuerySet
+        - `user.post_set.all()`: get QuerySet for posts by user
         - `user.post_set.create(title='Blog 3', content='Third Post Content!')`: create new post and authomatically save to database
         - `Post.objects.all()`
