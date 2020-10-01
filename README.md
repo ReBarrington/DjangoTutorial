@@ -97,3 +97,10 @@
 
 ## User Registration
 [View CoreyMS Tutorial](https://www.youtube.com/watch?v=q4jPR-M0TAQ)
+    - Create a new app: users `python3 manage.py startapp users`
+    - Add app to `INSTALLED_APP`
+    - Create register function in `views.py`
+        - User creation form already exists in Django. A class that will be turned to HTML. 
+        - `from django.contrib.auth.forms import UserCreationForm`
+    - Create new template (`register.html`). `<form>` needs `method="POST"` and a token.
+    
