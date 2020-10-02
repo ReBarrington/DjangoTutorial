@@ -111,4 +111,4 @@
         - `messages.success`
         - `messages.warning`
         - `messages.error`
-
+    - need a new form to inherit from default UserCreationForm because we want to add a new field: email.
