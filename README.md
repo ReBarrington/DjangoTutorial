@@ -97,19 +97,24 @@
 
 ## User Registration
 [View CoreyMS Tutorial](https://www.youtube.com/watch?v=q4jPR-M0TAQ)
-    - Create a new app: users `python3 manage.py startapp users`
-    - Add app to `INSTALLED_APP`
-    - Create register function in `views.py`
-        - User creation form already exists in Django. A class that will be turned to HTML. 
-        - `from django.contrib.auth.forms import UserCreationForm`
-    - Create new template (`register.html`). `<form>` needs `method="POST"` and a token.
-        - as_p
-        - GET and POST: insert a conditional that if there's a post request, validate the form, if a get, just render page. 
-    - `from django.contrib import messages`
-        - `messages.debug`
-        - `messages.info`
-        - `messages.success`
-        - `messages.warning`
-        - `messages.error`
-    - need a new form to inherit from default UserCreationForm because we want to add a new field: email.
-    - `crispy_forms` for styling
+- Create a new app: users `python3 manage.py startapp users`
+- Add app to `INSTALLED_APP`
+- Create register function in `views.py`
+    - User creation form already exists in Django. A class that will be turned to HTML. 
+    - `from django.contrib.auth.forms import UserCreationForm`
+- Create new template (`register.html`). `<form>` needs `method="POST"` and a token.
+    - as_p
+    - GET and POST: insert a conditional that if there's a post request, validate the form, if a get, just render page. 
+- `from django.contrib import messages`
+    - `messages.debug`
+    - `messages.info`
+    - `messages.success`
+    - `messages.warning`
+    - `messages.error`
+- need a new form to inherit from default UserCreationForm because we want to add a new field: email.
+- `crispy_forms` for styling
+
+## Login/Logout
+[View CoreyMS Tutorial](https://www.youtube.com/watch?v=3aVqWaLjqS4)
+
+
