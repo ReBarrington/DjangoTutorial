@@ -103,4 +103,12 @@
         - User creation form already exists in Django. A class that will be turned to HTML. 
         - `from django.contrib.auth.forms import UserCreationForm`
     - Create new template (`register.html`). `<form>` needs `method="POST"` and a token.
-    
+        - as_p
+        - GET and POST: insert a conditional that if there's a post request, validate the form, if a get, just render page. 
+    - `from django.contrib import messages`
+        - `messages.debug`
+        - `messages.info`
+        - `messages.success`
+        - `messages.warning`
+        - `messages.error`
+
