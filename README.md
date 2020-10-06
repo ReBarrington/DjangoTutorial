@@ -129,6 +129,9 @@
     - `from django.contrib.auth.decorators import login_required`
     - add `LOGIN_URL` to `settings.py` if not using default.
 
+## User Profile and Picture
+[View CoreyMS Tutorial](https://www.youtube.com/watch?v=FdVuKt_iuSI)
+
 
 
 
