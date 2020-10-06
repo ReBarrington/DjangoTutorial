@@ -125,7 +125,9 @@
 - NOTE: by default, successful login will try to navigate to the path: `/accounts/profile/`. In `settings.py` you can create new `LOGIN_REDIRECT_URL`
 - Django includes `is_authenticated`
     ### RESTRICTING ROUTES:
-    - 
+    - Django provides a Login Required decorator
+    - `from django.contrib.auth.decorators import login_required`
+    - add `LOGIN_URL` to `settings.py` if not using default.
 
 
 
