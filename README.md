@@ -116,5 +116,12 @@
 
 ## Login/Logout
 [View CoreyMS Tutorial](https://www.youtube.com/watch?v=3aVqWaLjqS4)
+- Login/Logout Views are included with Django:
+    - `from django.contrib.auth import views as auth_views` 
+    - `path('login/', auth_views.LoginView.as_view, name='login'),`
+    - `path('logout/', auth_views.LogoutView.as_view, name='logout'),`
+- Create a login template in users directory. Pass in `template_name` as argument in `urlpattern` so Django knows where to locate template.
+- Link to different components by `href="{% url 'login' %}`
+
 
 
