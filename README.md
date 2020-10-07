@@ -137,8 +137,9 @@
     - `python3 manage.py makemigrations`
     - run migrations: `python3 manage.py migrate`
     - `admin.py` in users app - register model
+- Generates a `profile_pics` directory
 
-
-
+## Update User Profile
+[View CoreyMS Tutorial](https://www.youtube.com/watch?v=CQ90L5jfldw)
 
 

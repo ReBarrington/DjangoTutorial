@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 import environ
 
@@ -131,6 +132,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# where Django stores images/uploaded files
+# using os.path.join method to use a directory called 'media' in the project's base directory 
+
+MEDIA_URL='/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
