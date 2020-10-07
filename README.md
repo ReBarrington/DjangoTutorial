@@ -131,6 +131,12 @@
 
 ## User Profile and Picture
 [View CoreyMS Tutorial](https://www.youtube.com/watch?v=FdVuKt_iuSI)
+- `models.py` in users app, extend default model
+- migrations: 
+    - `pip install Pillow`
+    - `python3 manage.py makemigrations`
+    - run migrations: `python3 manage.py migrate`
+    - `admin.py` in users app - register model
 
 
 
